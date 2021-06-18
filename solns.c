@@ -63,6 +63,7 @@ int mode(int array[],int len){
         i=1 ;
         b += 1 ;
       }
+    }
     return b ;
   }
   
