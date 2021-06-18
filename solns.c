@@ -1,42 +1,42 @@
 /* Enter your solutions in this file */
 #include <stdio.h>
 
-int max(int arr[],int len) {
-  int max = arr[0];
-  for(int i=1 ; i<len ; i++) {
-    if( arr[i] > max) {
-       max = arr[i] ;
+int max(int array[],int len){
+  int max=array[0];
+  for(int i=1;i<len;i++){
+    if(array[i] > max){
+       max=array[i] ;
     }
   }
   return max;
 }
 
-int min( int arr[],int len) {
-  int min = arr[0] ;
-  for( int i=1 ; i<len ; i++) {
-    if(arr[i] < min) {
-      min = arr[i];
+int min( int array[],int len){
+  int min=arr[0] ;
+  for(int i=1;i<len ;i++) {
+    if(arr[i]<min) {
+      min=arr[i];
     }
   }
   return min; 
 }
 
-float average(int arr[],int len ) {
+float average(int array[],int len){
   float sum = 0 ;
-  for( int i=0 ; i<len ; i++ ) {
+  for(int i=0;i<len;i++){
     sum += arr[i] ;
   }
 float avg = sum/len ;
 return avg ;
 }
 
-int mode( int arr[],int len ) {
-  int l = max( arr,len );
-  int s = min( arr,len ) ;
-  int diff = l-s + 1;
+int mode(int arr[],int len){
+  int l=max(arr,len);
+  int s=min(arr,len) ;
+  int diff=l-s+1;
   int count[diff];
-  for( int x=0; x<diff ; x++) {
-    count[x] = 0; 
+  for(int x=0;x<diff;x++){
+    count[x]=0; 
   }
   for( int i=s ; i<l+1; i++ ) {
     for(int a=0; a<len; a++) {
