@@ -1,7 +1,7 @@
 /* Enter your solutions in this file */
 #include <stdio.h>
 
-int max(int arr[], int len) {
+int max(int arr[],int len) {
   int max = arr[0];
   for(int i=1 ; i<len ; i++) {
     if( arr[i] > max) {
@@ -11,7 +11,7 @@ int max(int arr[], int len) {
   return max;
 }
 
-int min( int arr[], int len) {
+int min( int arr[],int len) {
   int min = arr[0] ;
   for( int i=1 ; i<len ; i++) {
     if(arr[i] < min) {
@@ -21,7 +21,7 @@ int min( int arr[], int len) {
   return min; 
 }
 
-float average(int arr[], int len ) {
+float average(int arr[],int len ) {
   float sum = 0 ;
   for( int i=0 ; i<len ; i++ ) {
     sum += arr[i] ;
@@ -30,7 +30,7 @@ float avg = sum/len ;
 return avg ;
 }
 
-int mode( int arr[], int len ) {
+int mode( int arr[],int len ) {
   int l = max( arr,len );
   int s = min( arr,len ) ;
   int diff = l-s + 1;
@@ -52,7 +52,7 @@ int mode( int arr[], int len ) {
     }
   }
   
-  int factors( int num, arr[] ) {
+  int factors( int num,arr[] ) {
     int b = 0 ;
     int x = num ;
     
