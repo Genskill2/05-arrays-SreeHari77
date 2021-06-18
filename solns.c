@@ -27,6 +27,7 @@ float average(int arr[], int len ) {
     sum += arr[i] ;
   }
 float avg = sum/len ;
+return avg ;
 }
 
 int mode( int arr[], int len ) {
