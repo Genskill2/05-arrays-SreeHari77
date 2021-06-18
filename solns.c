@@ -4,17 +4,17 @@
 int max(int array[],int len){
   int max=array[0];
   for(int i=1;i<len;i++){
-    if(array[i] > max){
+    if(array[i]>max){
        max=array[i] ;
     }
   }
   return max;
 }
 
-int min( int array[],int len){
+int min(int array[],int len){
   int min=array[0] ;
   for(int i=1;i<len ;i++) {
-    if(array[i]<min) {
+    if(array[i]<min){
       min=array[i];
     }
   }
@@ -24,7 +24,7 @@ int min( int array[],int len){
 float average(int array[],int len){
   float sum = 0 ;
   for(int i=0;i<len;i++){
-    sum += array[i] ;
+    sum=sum+array[i] ;
   }
 float avg = sum/len ;
 }
