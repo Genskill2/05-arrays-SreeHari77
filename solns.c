@@ -1,9 +1,9 @@
 /* Enter your solutions in this file */
 #include <stdio.h>
 
-int max(int arr[], int l) {
+int max(int arr[], int len) {
   int max = arr[0];
-  for(int i=1 ; i<l ; i++) {
+  for(int i=1 ; i<len ; i++) {
     if( arr[i] > max) {
        max = arr[i] ;
     }
@@ -11,9 +11,9 @@ int max(int arr[], int l) {
   return max;
 }
 
-int min( int arr[], int l) {
+int min( int arr[], int len) {
   int min = arr[0] ;
-  for( int i=1 ; i<l ; i++) {
+  for( int i=1 ; i<len ; i++) {
     if(arr[i] < min) {
       min = arr[i];
     }
@@ -21,24 +21,24 @@ int min( int arr[], int l) {
   return min; 
 }
 
-float average(int arr[], int l ) {
+float average(int arr[], int len ) {
   float sum = 0 ;
-  for( int i=0 ; i<l ; i++ ) {
+  for( int i=0 ; i<len ; i++ ) {
     sum += arr[i] ;
   }
-float avg = sum/l ;
+float avg = sum/len ;
 }
 
-int mode( int arr[], int l ) {
-  int last = max( arr,l );
-  int s = min( arr,l ) ;
-  int d = last-s + 1;
+int mode( int arr[], int len ) {
+  int l = max( arr,len );
+  int s = min( arr,len ) ;
+  int diff = l-s + 1;
   int count[d];
   for( int x=0; x<diff ; x++) {
     count[x] = 0; 
   }
-  for( int i=s ; i<last+1; i++ ) {
-    for(int a=0; a<l; a++) {
+  for( int i=s ; i<l+1; i++ ) {
+    for(int a=0; a<len; a++) {
       if( arr[a]==i ) {
         count[i-s] += 1;   
       }
@@ -51,7 +51,7 @@ int mode( int arr[], int l ) {
     }
   }
   
-  int factors9 int num, arr[] ) {
+  int factors( int num, arr[] ) {
     int b = 0 ;
     int x = num ;
     
