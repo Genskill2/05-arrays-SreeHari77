@@ -24,15 +24,15 @@ int min( int array[],int len){
 float average(int array[],int len){
   float sum = 0 ;
   for(int i=0;i<len;i++){
-    sum += arr[i] ;
+    sum += array[i] ;
   }
 float avg = sum/len ;
 return avg ;
 }
 
-int mode(int arr[],int len){
-  int l=max(arr,len);
-  int s=min(arr,len) ;
+int mode(int array[],int len){
+  int l=max(array,len);
+  int s=min(array,len) ;
   int diff=l-s+1;
   int count[diff];
   for(int x=0;x<diff;x++){
@@ -40,7 +40,7 @@ int mode(int arr[],int len){
   }
   for( int i=s ; i<l+1; i++ ) {
     for(int a=0; a<len; a++) {
-      if( arr[a]==i ) {
+      if( array[a]==i ) {
         count[i-s] += 1;   
       }
     }
@@ -52,13 +52,13 @@ int mode(int arr[],int len){
     }
   }
   
-  int factors( int num,arr[] ) {
+  int factors(array[],int num) {
     int b = 0 ;
     int x = num ;
     
     for( int i=2 ; i<=x ; i++) {
       if( x%i==0 ) {
-        arr[b] = i ;
+        array[b] = i ;
         x /=1 ;
         i=1 ;
         b += 1 ;
