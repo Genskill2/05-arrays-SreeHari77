@@ -56,10 +56,10 @@ int mode(int array[],int len){
     int b = 0 ;
     int x = num ;
     
-    for( int i=2 ; i<=x ; i++) {
-      if( x%i==0 ) {
-        array[b] = i ;
-        x /=1 ;
+    for(int i=2;i<=x;i++){
+      if(x%i==0){
+        array[b]=i ;
+        x =x/i;
         i=1 ;
         b += 1 ;
       }
