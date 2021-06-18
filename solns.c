@@ -51,7 +51,20 @@ int mode( int arr[], int l ) {
     }
   }
   
-  
+  int factors9 int num, arr[] ) {
+    int b = 0 ;
+    int x = num ;
+    
+    for( int i=2 ; i<=x ; i++) {
+      if( x%i==0 ) {
+        arr[b] = i ;
+        x=x/i ;
+        i=1 ;
+        b += 1 ;
+      }
+    }
+    return b ;
+  }
   
   
   
