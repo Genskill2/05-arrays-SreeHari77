@@ -59,7 +59,7 @@ int mode(int arr[],int len){
     for( int i=2 ; i<=x ; i++) {
       if( x%i==0 ) {
         arr[b] = i ;
-        x=x/i ;
+        x /=1 ;
         i=1 ;
         b += 1 ;
       }
