@@ -52,7 +52,7 @@ int mode(int array[],int len){
     }
   }
   
-  int factors(array[],int num) {
+  int factors(int array[],int num) {
     int b = 0 ;
     int x = num ;
     
