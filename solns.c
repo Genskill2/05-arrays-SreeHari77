@@ -34,7 +34,7 @@ int mode( int arr[], int len ) {
   int l = max( arr,len );
   int s = min( arr,len ) ;
   int diff = l-s + 1;
-  int count[d];
+  int count[diff];
   for( int x=0; x<diff ; x++) {
     count[x] = 0; 
   }
