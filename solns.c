@@ -44,6 +44,7 @@ int mode(int array[],int len){
         count[i-s] += 1;   
       }
     }
+  }
     int num = max(count,diff) ;
     for( int b=0; b<diff ; b++) {
       if(count[b]==num) {
