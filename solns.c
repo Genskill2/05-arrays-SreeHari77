@@ -12,10 +12,10 @@ int max(int array[],int len){
 }
 
 int min( int array[],int len){
-  int min=arr[0] ;
+  int min=array[0] ;
   for(int i=1;i<len ;i++) {
-    if(arr[i]<min) {
-      min=arr[i];
+    if(array[i]<min) {
+      min=array[i];
     }
   }
   return min; 
